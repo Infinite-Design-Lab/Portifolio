@@ -196,18 +196,12 @@ if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone|i
   window.location.href = "incompatible.html";
 }
 
-// Função para verificar o status de manutenção
+let emManutencao = true
+
 function verificarStatusManutencao() {
-    fetch('http://localhost:3000/status-manutencao')
-        .then(response => response.json())
-        .then(data => {
-            const emManutencao = data.manutencao;
-            if (emManutencao) {
-                window.location.href = "maintenance.html"
-            }
-        })
-        .catch(error => console.error('Erro ao verificar o status de manutenção:', error));
+  if (emManutencao) {
+    window.location.href = "./maintenance.html"
+  }
 }
 
-// Chama a função para verificar o status de manutenção
 verificarStatusManutencao();
