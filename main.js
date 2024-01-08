@@ -197,10 +197,13 @@ if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone|i
 }
 
 function verificarStatusManutencao() {
-            const emManutencao = true;
-            if (emManutencao) {
-                window.location.href = "https://infinite-design-lab.github.io/Portifolio/maintenance.html"
-            }
-        }
+    const emManutencao = true;
+    if (emManutencao) {
+        // Cria um link e simula um clique para redirecionamento
+        const link = document.createElement('a');
+        link.href = "https://infinite-design-lab.github.io/Portifolio/maintenance.html";
+        link.click();
+    }
+}
 
 verificarStatusManutencao();
