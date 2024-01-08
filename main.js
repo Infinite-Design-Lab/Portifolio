@@ -193,7 +193,9 @@ if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone|i
   // Este é um dispositivo móvel (smartphone).
 } else {
   // Redirecionar para a página informando que não há versão para computadores
-  window.location.href = "incompatible.html";
+  const link = document.createElement('a');
+        link.href = "https://infinite-design-lab.github.io/Portifolio/incompatible.html";
+        link.click();
 }
 
 function verificarStatusManutencao() {
