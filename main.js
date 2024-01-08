@@ -197,15 +197,10 @@ if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone|i
 }
 
 function verificarStatusManutencao() {
-    fetch('http://localhost:3000/status-manutencao')
-        .then(response => response.json())
-        .then(data => {
-            const emManutencao = data.manutencao;
+            const emManutencao = true;
             if (emManutencao) {
                 window.location.href = "https://infinite-design-lab.github.io/Portifolio/maintenance.html"
             }
-        })
-        .catch(error => console.error('Erro ao verificar o status de manutenção:', error));
-}
+        }
 
 verificarStatusManutencao();
