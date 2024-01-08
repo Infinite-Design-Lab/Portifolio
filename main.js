@@ -188,3 +188,26 @@ function validarEmail(email) {
         }
     }
 }
+
+if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
+  // Este é um dispositivo móvel (smartphone).
+} else {
+  // Redirecionar para a página informando que não há versão para computadores
+  window.location.href = "incompatible.html";
+}
+
+// Função para verificar o status de manutenção
+function verificarStatusManutencao() {
+    fetch('http://localhost:3000/status-manutencao')
+        .then(response => response.json())
+        .then(data => {
+            const emManutencao = data.manutencao;
+            if (emManutencao) {
+                window.location.href = "maintenance.html"
+            }
+        })
+        .catch(error => console.error('Erro ao verificar o status de manutenção:', error));
+}
+
+// Chama a função para verificar o status de manutenção
+verificarStatusManutencao();

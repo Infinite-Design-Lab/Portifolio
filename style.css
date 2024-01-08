@@ -1023,3 +1023,86 @@ footer span a:hover {
 }
 
 }
+
+
+@media screen and (orientation: landscape) {
+  #barsHeader {
+    display: none;
+  }
+  
+  .navbarHeader {
+  width: 450px;
+  height: 30px;
+  top: 0;
+  margin-bottom: 0;
+  display: flex;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.menuHeader {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+.menuHeader a {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 1.5em;
+  transition: color 0.1s linear 0.5s;
+  cursor: pointer;
+}
+
+.menuHeader a:hover {
+  color: crimson;
+}
+  
+  .main2 {
+    top: 150px;
+  }
+  .home {
+    top: 120px;
+  }
+  .about {
+    height: 500px;
+  }
+  .about .title {
+  top: 19%;
+  left: 450px;
+}
+
+.about .title2 {
+  left: 475px;
+}
+
+.about .title2::after {
+  margin-right: 1%;
+}
+
+.about .about-text {
+  position: relative;
+  width: 380px;
+  margin-left: 0;
+  left: 390px;
+  top: -350px;
+}
+
+.services .title {
+  top: 150px;
+  left: 390px;
+}
+
+.services .title2 {
+  left: 450px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+}
