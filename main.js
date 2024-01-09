@@ -207,3 +207,5 @@ function verificarStatusManutencao() {
         link.click();
   }
 }
+
+verificarStatusManutencao()
