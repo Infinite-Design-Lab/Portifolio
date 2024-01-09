@@ -187,20 +187,5 @@ function validarEmail(email) {
 if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
   // Este é um dispositivo móvel (smartphone).
 } else {
-  // Redirecionar para a página informando que não há versão para computadores
-  const link = document.createElement('a');
-        link.href = "https://infinite-design-lab.github.io/Portifolio/incompatible.html";
-        link.click();
+  window.location.href = "https://infinite-design-lab.github.io/Portifolio/incompatible.html";
 }
-
-let emManutencao = false
-
-function verificarStatusManutencao() {
-  if (emManutencao) {
-    const link = document.createElement('a');
-        link.href = "https://infinite-design-lab.github.io/Portifolio/maintenance.html";
-        link.click();
-  }
-}
-
-verificarStatusManutencao()
