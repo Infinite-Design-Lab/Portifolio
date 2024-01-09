@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Infinite Design Lab</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  <link rel="shortcut icon" href="https://i.imgur.com/TrByovP.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <meta name="description" content="Conheça o portfólio da nossa equipe de design na Infinite Design Lab. Apaixonados por criar experiências visuais incríveis e conteúdo digital envolvente. Especializados em design gráfico, web design, design visual, conteúdo digital e muito mais. Transformamos conceitos em obras de arte!">
+  <style type="text/css" media="all">
+  @keyframes rainbowAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.rainbow-text {
+    background: linear-gradient(90deg, #FF0000, #FF7F00, #FFFF00, #00FF00, #0000FF, #4B0082, #8B00FF);
+    background-size: 1400% 100%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: rainbowAnimation 0.5s linear infinite;
+}
+
+    .main2 {
+      top: 100vh;
+    }
+    .home {
+      margin-left: 20px;
+    }
+    .services {
+      height: 3800px;
+    }
+    .card-services:not(:first-child) {
+      margin-top: 20px;
+    }
+    .home .home-content .text-2 {
+      font-weight: 1000;
+      font-size: 50px;
+      margin-left: 75px;
+      font-family: "Ubuntu", sans-serif;
+    }
+    .card {
+      border-radius: 8px;
+      width: 300px;
+      margin: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .card .img {
+      border-radius: 8px;
+      border-radius: 8px;
+      width: 299px;
+    }
+
+    .card img {
+      width: 298px;
+      display: block;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+.projects {
+  margin-top: 20px;
+  display: flex;
+  background-color: #FFF;
+  position: relative;
+  bottom: -70px;
+  overflow: scroll;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 98;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 10);
+  justify-content: center;
+  align-items: center;
+  transition: display 0.5s linear;
+}
+
+.modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 5px;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.button {
+  position: absolute;
+  background-color: greenyellow;
+  bottom: 130px;
+  padding: 20px;
+  left: 100px;
+  font-weight: 700;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  align-items: center;
+  animation: pulse 0.4s infinite alternate;
+}
+@keyframes pulse {
+          from {
+            transform: scale(1);
+          }
+        
+          to {
+            transform: scale(1.2);
+          }
+        }
+  </style>
+</head>
+
+<body>
+  
+  <div class="scroll-up-btn">
+    <a style="text-decoration: none; color: #FFFFFF;"><i class="fas fa-angle-up"></i></a>
+  </div>
+  <main id="main1" class="main1">
+  <header>
+    <div class="logo-container">
+      <img src="https://i.imgur.com/TrByovP.png" alt="IDL Logo">
+    </div>
+    <h3 lang="mul"><span>Infinite</span> <span style="color: orange;">Design</span> <span style="color: skyblue;">Lab</span></h3>
+    <nav class="navbarHeader">
+          <ul class="menuHeader">
+            <li><a href="https://infinite-design-lab.github.io/Portifolio/#main1" class="menu-btn">Home</a></li>
+            <li><a href="https://infinite-design-lab.github.io/Portifolio/#about" class="menu-btn">About</a></li>
+            <li><a href="https://infinite-design-lab.github.io/Portifolio/#services" class="menu-btn">Services</a></li>
+            <li><a href="https://infinite-design-lab.github.io/Portifolio/#skills" class="menu-btn">Skills</a></li>
+            <li><a href="https://infinite-design-lab.github.io/Portifolio/#contact" class="menu-btn">Contact</a></li>
+          </ul>
+        </nav>
+    <i id="barsHeader" class="fa fa-bars" style="z-index: 999;"></i>
+  </header>
+  <nav class="navbar">
+    <i id="barsNav" class="fa fa-times"></i>
+      <ul class="menu">
+        <li><a href="https://infinite-design-lab.github.io/Portifolio/#main1" class="menu-btn">Home</a></li>
+        <li><a href="https://infinite-design-lab.github.io/Portifolio/#about" class="menu-btn">About</a></li>
+        <li><a href="https://infinite-design-lab.github.io/Portifolio/#services" class="menu-btn">Services</a></li>
+        <li><a href="https://infinite-design-lab.github.io/Portifolio/#skills" class="menu-btn">Skills</a></li>
+        <li><a href="https://infinite-design-lab.github.io/Portifolio/#contact" class="menu-btn">Contact</a></li>
+      </ul>
+  </nav>
+  <section class="home" id="home">
+    <div class="home-content">
+      <div class="text-1"></div>
+    <div class="text-2" lang="mul" class="notranslate">Serviços</div>
+    <div class="text-3"></div>
+    </div>
+  </section>
+  </main>
+  <main class="main2">
+    <div class="services" id="services">
+      <h2 class="title">Nossos Serviços</h2>
+      <h2 class="title title2" style="">What I Offer</h2>
+      <div class="cards">
+      <div class="card-services" style="margin-top: 0;">
+        <div class="box">
+          <i class="fa fa-paint-brush"></i>
+          <div class="text">Design Gráfico</div>
+        </div>
+        <p class="text-src">Com um olhar aguçado para estética e uma profunda compreensão dos princípios de design centrados no usuário, nossa equipe tem o talento de criar designs gráficos visualmente impactantes e intuitivos que cativam espectadores e elevam a experiência visual.</p>
+      </div>
+      <div class="card-services">
+        <div class="box">
+          <i class="fa fa-palette"></i>
+          <div class="text">Design Visual</div>
+        </div>
+        <p class="text-src">Profissionais em design visual, nossa equipe cria composições visuais envolventes e impactantes. Da escolha de cores à seleção de elementos gráficos, buscamos cativar espectadores e elevar a experiência visual, superando expectativas em cada projeto.</p>
+      </div>
+      <div class="card-services">
+        <div class="box">
+          <i class="fas fa-code" style="margin-left: 40px"></i>
+          <div class="text">Web Design</div>
+        </div>
+        <p class="text-src">Com habilidade em tecnologias de desenvolvimento web, focamos em criar websites responsivos e visualmente atraentes. Nosso destaque está no design de front-end, utilizando HTML, CSS e JavaScript para oferecer experiências de usuário envolventes.</p>
+      </div>
+      <div class="card-services">
+        <div class="box">
+          <i class="fa fa-desktop" style="margin-left: 55px"></i>
+          <div class="text">Design Digital</div>
+        </div>
+        <p class="text-src">Com especialização em Design Digital, nosso foco é a criação de estratégias visuais envolventes para redes sociais e conteúdo digital. Nossa expertise abrange a concepção de elementos visuais impactantes, explorando a harmonia entre design e experiência do usuário.</p>
+      </div>
+      <div class="card-services">
+        <div class="box">
+          <i class="fas fa-book" style="margin-left: 70px"></i>
+          <div class="text">Design E-books</div>
+        </div>
+        <p class="text-src">Nosso domínio no Design de E-books destaca-se na criação de layouts envolventes e visualmente atraentes para proporcionar experiências de leitura excepcionais. Unimos criatividade e funcionalidade, aplicando princípios de design para cativar o público-alvo.</p>
+      </div>
+      <div class="card-services">
+        <div class="box">
+          <i class="fas fa-bullhorn" style="margin-left: 95px"></i>
+          <div class="text">Design de Marketing</div>
+        </div>
+        <p class="text-src">Na vanguarda do Design de Marketing, moldamos estratégias visuais para impulsionar marcas e alcançar públicos-alvo. Combinamos criatividade e análise, desenvolvendo campanhas visuais impactantes e identidades de marca memoráveis. Nossa abordagem inovadora no Design de Marketing abrange desde a criação de materiais promocionais até a construção de narrativas visuais envolventes.</p>
+      </div>
+      </div>
+      <h1 style="margin-top: 200px; margin-left: 60px;">Serviços Feitos</h1>
+      <div class="projects">
+        <div class="card">
+          <div class="img">
+            <img src="https://i.imgur.com/QD9G4Jx.jpg" alt="">
+          </div>
+        </div>
+        <div class="card" style="height: 421px; margin-top: 70px;">
+          <div class="img">
+            <img src="https://i.imgur.com/muAQRX2.jpg" alt="">
+          </div>
+        </div>
+        <div class="card">
+          <div class="img">
+            <img src="https://i.imgur.com/aUmCseV.jpg" alt="">
+          </div>
+        </div>
+        <div class="card">
+          <div class="img">
+            <img src="https://i.imgur.com/8FRtjzR.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      </div>
+      <div id="myModal" class="modal" onclick="closeModal()">
+        <img src="" alt="Imagem em destaque" id="modalImage">
+      </div>
+      <div class="button" onclick="redirect('')"><p>Nós Contrate Agora!</p></div>
+    <footer>
+    <span>Copyright © <script>
+        document.write(new Date().getFullYear());
+      </script> Todos os direitos reservados por  <i class="fa fa-users"></i> <a href="https://instagram.com/infinite_designlab?igshid=NzZlODBkYWE4Ng==">Infinite Design Lab</a></p>
+  </footer>
+  </main>
+  
+ <!-- <script>
+    if (innerWidth >= 980) {
+      const link = document.createElement('a')
+      link.target = '_self'
+      link.href = 'https://infinite-design-lab.github.io/Portifolio/incompatible.html'
+      link.click()
+    }
+  </script> -->
+  <script src="main.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+  const cards = document.querySelectorAll('.card');
+  const container = document.querySelector('.projects')
+
+cards.forEach(card => {
+    card.addEventListener('click', () => {
+        const imageUrl = card.querySelector('img').src;
+        openModal(imageUrl);
+    });
+});
+
+function openModal(imageUrl) {
+    document.getElementById('modalImage').src = imageUrl;
+    document.getElementById('myModal').style.display = 'flex';
+}
+
+// Função para fechar o modal
+function closeModal() {
+    document.getElementById('myModal').style.display = 'none';
+}
+
+  </script>
+</body>
+
+</html>
