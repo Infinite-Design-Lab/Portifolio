@@ -24,12 +24,7 @@ function toggleMenu() {
   }
 }
 
-var typed = new Typed(".typing", {
-    strings: ['Designer Gráfico', 'Designer Visual', 'Web Design'],
-    typeSpeed: 100,
-    backSpeed: 30,
-    loop: true
-})
+
 
 window.addEventListener('scroll', function() {
 
