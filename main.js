@@ -198,7 +198,7 @@ if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone|i
         link.click();
 }
 
-let emManutencao = true
+let emManutencao = false
 
 function verificarStatusManutencao() {
   if (emManutencao) {
