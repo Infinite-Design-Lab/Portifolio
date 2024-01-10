@@ -239,7 +239,7 @@
       <div id="myModal" class="modal" onclick="closeModal()">
         <img src="" alt="Imagem em destaque" id="modalImage">
       </div>
-      <div class="button" onclick="redirect('')"><p>Nós Contrate Agora!</p></div>
+      <div class="button" onclick="redirect('https://infinite-design-lab.github.io/Portifolio/contract.html')"><p>Nós Contrate Agora!</p></div>
     <footer>
     <span>Copyright © <script>
         document.write(new Date().getFullYear());
@@ -247,14 +247,14 @@
   </footer>
   </main>
   
- <!-- <script>
+ <script>
     if (innerWidth >= 980) {
       const link = document.createElement('a')
       link.target = '_self'
       link.href = 'https://infinite-design-lab.github.io/Portifolio/incompatible.html'
       link.click()
     }
-  </script> -->
+  </script>
   <script src="main.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
@@ -278,6 +278,11 @@ function closeModal() {
     document.getElementById('myModal').style.display = 'none';
 }
 
+function redirect(link) {
+  const link = document.createElement('a')
+  link.href = link
+  link.click()
+}
   </script>
 </body>
 

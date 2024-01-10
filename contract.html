@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Infinite Design Lab</title>
+  <link rel="shortcut icon" href="https://i.imgur.com/TrByovP.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <meta name="description" content="Conheça o portfólio da nossa equipe de design na Infinite Design Lab. Apaixonados por criar experiências visuais incríveis e conteúdo digital envolvente. Especializados em design gráfico, web design, design visual, conteúdo digital e muito mais. Transformamos conceitos em obras de arte!">
+  <style type="text/css" media="all">
+      .home .home-content .text-2 {
+      font-weight: 1000;
+      font-size: 50px;
+      margin-left: 60px;
+      font-family: "Ubuntu", sans-serif;
+    }
+    .custom-select {
+  position: relative;
+  width: 200px;
+}
+
+.select-trigger {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.option {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #f0f0f0;
+}
+
+body {
+  margin: 0;
+}
+
+.neon-background {
+  width: 346px;
+  height: 358px;
+  background: linear-gradient(45deg, #FFFFFF, #C080FF, #933BE8, #8100FF, #7300C1);
+  background-size: 400% 400%;
+  animation: gradientAnimation 3s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.form-content {
+  margin: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px #6E2AFF;
+  height: auto;
+  padding: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.form-content .agree {
+  display: flex;
+}
+
+.form-content .agree input {
+  width: 30px;
+  margin-right: 10px;
+}
+.form-content a {
+  color: #0002FF;
+}
+
+button {
+  border: 2px solid crimson;
+  padding: 10px;
+  width: 150px;
+  height: 50px;
+  background-color: crimson;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  font-weight: 1000;
+  margin-left: 75px;
+  margin-top: 20px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: transparent;
+  color: crimson;
+}
+
+.form {
+  height: 800px;
+}
+.error {
+  color: red;
+  font-weight: 1000;
+}
+.modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.7);
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+    }
+
+    .modal-content {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+
+<body>
+  <div class="scroll-up-btn">
+    <a style="text-decoration: none; color: #FFFFFF;"><i class="fas fa-angle-up"></i></a>
+  </div>
+  <main id="main1" class="main1">
+    <header>
+      <div class="logo-container">
+        <img src="https://i.imgur.com/TrByovP.png" alt="IDL Logo">
+      </div>
+      <h3 lang="mul"><span>Infinite</span> <span style="color: orange;">Design</span> <span style="color: skyblue;">Lab</span></h3>
+      <nav class="navbarHeader">
+        <ul class="menuHeader">
+          <li><a href="#main1" class="menu-btn">Home</a></li>
+          <li><a href="#about" class="menu-btn">About</a></li>
+          <li><a href="#services" class="menu-btn">Services</a></li>
+          <li><a href="#skills" class="menu-btn">Skills</a></li>
+          <li><a href="#contact" class="menu-btn">Contact</a></li>
+        </ul>
+      </nav>
+      <i id="barsHeader" class="fa fa-bars" style="z-index: 999;"></i>
+    </header>
+    <nav class="navbar">
+      <i id="barsNav" class="fa fa-times"></i>
+      <ul class="menu">
+        <li><a href="https://infinite-design-lab.github.io/Portifolio/#main1" class="menu-btn">Home</a></li>
+        <li><a href="https://infinite-design-lab.github.io/Portifolio/#about" class="menu-btn">About</a></li>
+        <li><a href="https://infinite-design-lab.github.io/Portifolio/#services" class="menu-btn">Services</a></li>
+        <li><a href="https://infinite-design-lab.github.io/Portifolio/#skills" class="menu-btn">Skills</a></li>
+        <li><a href="https://infinite-design-lab.github.io/Portifolio/#contact" class="menu-btn">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="home" id="home">
+      <div class="home-content">
+        <div class="text-2" lang="mul" class="notranslate">Formulário <br><p style="margin-left: 100px">de</p><p style="margin-left: 20px">Contrato</p></div>
+      </div>
+    </section>
+  </main>
+  <main class="main2">
+    <div class="form">
+      <h1 style="margin-left: 10px">Preencha o formulário <p style="margin-left: 120px">abaixo!</p></h1>
+      <div class="form-content">
+        <label for="name">Seu Nome:</label>
+        <input type="text" name="name" id="name" value="" />
+          <span id="nameError" class="error"></span>
+        <label for="number">Seu Número:</label>
+        <input type="text" name="number" id="phone" id="number" value="" oninput="formatPhoneNumber()" onclick="placeCaretAtEnd()" maxlength="15" />
+          <span id="numberError" class="error"></span>
+        <label for="service">Escolha um Serviço:</label>
+        <div class="custom-select">
+          <div class="select-trigger">Selecione uma opção</div>
+          <div class="options">
+            <div class="option" data-value="opcao1">Design Gráfico</div>
+            <div class="option" data-value="opcao2">Design Visual</div>
+            <div class="option" data-value="opcao3">Design De Conteúdo Digital</div>
+            <div class="option" data-value="opcao4">Design de Redes Sociais</div>
+            <div class="option" data-value="opcao5">Design de E-books</div>
+            <div class="option" data-value="opcao6">Design de Marketing</div>
+            <div class="option" data-value="opcao7">Outro</div>
+          </div>
+        </div>
+        <span id="serviceError" class="error"></span>
+        <label for="description">Fale exatamente o que você quer:</label>
+        <input type="text" name="description" id="description" value="" />
+          <span id="descriptionError" class="error"></span>
+        <div class="agree">
+          <input type="checkbox" name="agreement" id="agreement" /><p>Eu li e concordo com os <a href="https://infinite-design-lab.github.io/Portifolio/terms.html">Termos e Condições</a> da Infinite Design Lab</p>
+        </div>
+        <span id="agreementError" class="error"></span>
+        <button type="submit" onclick="validateAndRedirect()">Enviar</button>
+      </div>
+    </div>
+     <footer>
+       <span>Copyright © <script>
+           document.write(new Date().getFullYear());
+         </script> Todos os direitos reservados por <i class="fa fa-users"></i> <a href="https://instagram.com/infinite_designlab?igshid=NzZlODBkYWE4Ng==">Infinite Design Lab</a></p>
+     </footer>
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <p id="modalMessage"></p>
+  </div>
+</div>
+  </main>
+  <script src="main.js"></script>
+  <script>
+    const selectTrigger = document.querySelector('.select-trigger');
+    const optionsContainer = document.querySelector('.options');
+    
+    
+    selectTrigger.addEventListener('click', function() {
+      optionsContainer.style.display = optionsContainer.style.display === 'block' ? 'none' : 'block';
+    });
+    
+    document.addEventListener('click', function(event) {
+      if (!selectTrigger.contains(event.target) && !optionsContainer.contains(event.target)) {
+        optionsContainer.style.display = 'none';
+      }
+    });
+    
+    const options = document.querySelectorAll('.option');
+    options.forEach(function(option) {
+      option.addEventListener('click', function() {
+        selectTrigger.textContent = option.textContent;
+        optionsContainer.style.display = 'none';
+      });
+    });
+    
+    function validateAndRedirect() {
+      var name = document.getElementById("name").value;
+      var number = document.getElementById("phone").value;
+      var description = document.getElementById("description").value;
+      var agreement = document.getElementById("agreement").checked;
+
+  selectedService = getSelectedService(); // Atualize selectedService com a opção selecionada
+  
+  if (selectedService === 'Selecione uma opção') {
+    // Exibe mensagem de erro se nenhum serviço for selecionado
+    document.getElementById("serviceError").innerText = "Você deve selecionar um serviço";
+  } else {
+    // Limpa a mensagem de erro se um serviço for selecionado
+    document.getElementById("serviceError").innerText = "";
+  }
+
+    
+      document.getElementById("nameError").innerText = name === "" ? "Campo obrigatório" : "";
+      document.getElementById("numberError").innerText = number === "" ? "Campo obrigatório" : "";
+      document.getElementById("descriptionError").innerText = description === "" ? "Campo obrigatório" : "";
+      document.getElementById("agreementError").innerText = !agreement ? "Você deve concordar com os Termos e Condições" : "";
+    
+      // Verifica se não há erros antes de redirecionar
+      if (name !== "" && number !== ""  && description !== "" && agreement) {
+        if (number.lenght <= 12) {
+          document.getElementById("numberError").innerText = "O número deve conter 11 números\n(DDD) número"
+        }
+        // Monta a URL do WhatsApp com as informações do formulário
+        var whatsappURL = "https://wa.me/557381416647/?text=" +
+          "Olá, Meu Nome é: " + encodeURIComponent(name) +
+          "%0AMeu Número é: " + encodeURIComponent(number) +
+          "%0AEu Quero O Serviço de: " + encodeURIComponent(getSelectedService()) +
+          "%0AMais Detalhadamente: " + encodeURIComponent(description);
+    
+        // Redireciona para a URL do WhatsApp
+        displayModal('Você será redirecionado para o WhatsApp e deverá clicar em enviar!')
+        setTimeout(() => {
+          const link = document.createElement('a')
+          link.href = whatsappURL
+          link.click()
+        }, 2000)
+      }
+    }
+    
+    function getSelectedService() {
+      return selectTrigger.innerText;
+    }
+    
+    function formatPhoneNumber() {
+    var input = document.getElementById("phone");
+    var inputValue = input.value.replace(/\D/g, ''); // Remove caracteres não numéricos
+    
+    // Adiciona automaticamente o parêntese após o segundo dígito
+    if (inputValue.length >= 2 && inputValue.length < 10) {
+      input.value = '(' + inputValue.substring(0, 2) + ') ' + inputValue.substring(2);
+    }
+    
+    // Adiciona automaticamente o hífen após o sétimo dígito
+    if (inputValue.length >= 7) {
+      input.value = '(' + inputValue.substring(0, 2) + ') ' + inputValue.substring(2, 7) + '-' + inputValue.substring(7);
+    }
+
+    // Formato para números de telefone com até 10 dígitos (XXXXXXXXXX)
+    if (inputValue.length <= 11) {
+      input.value = input.value.replace(/(\d{2})(\d{4})(\d{4})/, '($1) $2-$3');
+    } else {
+      // Formato para números de telefone com mais de 10 dígitos (DDDX XXXX-XXXX)
+      input.value = input.value.replace(/(\d{3})(\d{4})(\d{4})/, '($1) $2-$3');
+    }
+  }
+
+  let paz = 0;
+
+  function placeCaretAtEnd() {
+    if (paz === 1) {
+      return;
+    }
+    var input = document.getElementById("phone");
+    
+    paz = 1;
+    
+    // Adiciona automaticamente o parêntese ao clicar
+    if (input.value === "") {
+      input.value = '(';
+    }
+
+    input.focus();
+
+    // Posiciona o cursor entre os parênteses
+    var len = input.value.length;
+    if (len < 6) {
+      input.setSelectionRange(1, 1);
+    } else {
+      input.setSelectionRange(len, len);
+    }
+  }
+  
+  function displayModal(msg) {
+      const modal = document.getElementById('modal');
+      modal.style.display = 'flex';
+      document.getElementById('modalMessage').innerText = msg
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('modal');
+      modal.style.display = 'none';
+    }
+  </script>
+</body>
+
+</html>
+

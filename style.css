@@ -22,7 +22,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.about, .services, .skills, .contact {
+.about, .services, .skills, .contact, .form {
   font-family: "Poppins", sans-serif;
   width: auto;
   height: 900px;
