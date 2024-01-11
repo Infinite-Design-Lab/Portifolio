@@ -6,6 +6,55 @@
   box-sizing: border-box;
 }
 
+.modal {
+  font-family: sans-serif;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin-left: 30%;
+}
+
+@keyframes enter {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+#endModal {
+  position: absolute;
+  z-index: 999;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#endModal button {
+  border: none;
+  background-color: greenyellow;
+  padding: 10px;
+  transform: scale(1.2);
+}
+
 .navbarHeader {
   display: none;
 }
