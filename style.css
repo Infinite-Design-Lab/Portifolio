@@ -36,11 +36,6 @@
   }
 }
 
-#endModal {
-  position: absolute;
-  z-index: 999;
-}
-
 .close {
   position: absolute;
   top: 10px;
@@ -247,6 +242,10 @@ body {
   color: crimson;
 }
 
+.main1 {
+  height: 100vh;
+}
+
 .home {
   position: relative;
   top: 250px;
@@ -280,7 +279,6 @@ body {
 
 .main2 {
   position: relative;
-  top: 580px;
   height: auto;
 }
 
@@ -376,7 +374,7 @@ body {
 .services {
   background-color: #000;
   color: #FFF;
-  height: 1650px;
+  height: 1700px;
 }
 
 
@@ -419,6 +417,12 @@ body {
   color: crimson;
 }
 
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .card-services {
   display: flex;
   flex-direction: column;
@@ -427,7 +431,7 @@ body {
   background-color: #222222;
   position: relative;
   top: 150px;
-  left: 25px;
+  left: 0;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -509,7 +513,7 @@ body {
   cursor: pointer;
   transition: all 0.5s ease;
   top: 160px;
-  left: 90px;
+  left: 145px;
 }
 
 .services button:hover {
@@ -770,6 +774,10 @@ body {
   top: 30px;
 }
 
+.form {
+  height: auto;
+}
+
 
 form {
   width: 350px;
@@ -851,6 +859,8 @@ form .alert {
 }
 
 footer {
+  position: relative;
+  top: 300px;
   background: #111;
   padding: 15px 23px;
   color: #fff;
@@ -865,6 +875,8 @@ footer span a {
 footer span a:hover {
   text-decoration: underline;
 }
+
+
 
 
 
@@ -1074,7 +1086,6 @@ footer span a:hover {
 
 }
 
-
 @media screen and (orientation: landscape) {
   #barsHeader {
     display: none;
@@ -1155,4 +1166,397 @@ footer span a:hover {
   flex-wrap: wrap;
 }
 
+}
+
+@media screen and (min-width: 500px) {
+  header {
+    height: 100px;
+    padding: 20px 30px;
+  }
+  header .logo-container {
+    transform: scale(1.3)
+  }
+  header i.fa-bars {
+    font-size: 30px;
+  }
+  .navbar i {
+    font-size: 30px;
+    top: -45%;
+    left: 50%;
+  }
+  .navbar .menu {
+    margin-top: 75%;
+    transform: scale(1.2);
+  }
+  .about .title:first-child {
+    width: 200px;
+    font-size: 30px;
+    top: 10%;
+    left: 35%;
+  }
+  .about .title2 {
+    font-size: 15px;
+    width: 130px;
+    left: 41%;
+    top: 10%;
+  }
+  .home-content {
+    margin-left: 20px;
+  }
+  .home .home-content .text-1 {
+    font-size: 35px;
+  }
+  .home .home-content .text-2 {
+    font-size: 50px;
+  }
+  .home .home-content .text-3 {
+    font-size: 45px;
+  }
+  .about {
+    height: 1100px;
+  }
+  .about .about-img p {
+    width: 280px;
+    margin-left: 20%;
+  }
+  .about .about-img {
+    transform: scale(1.2);
+    margin-left: 19%;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    width: 200px;
+  }
+  .about .about-img img {
+    margin-left: 0;
+  }
+  .about .about-text {
+    transform: scale(1.1);
+    margin-left: 20%;
+    font-size: 18px;
+    width: 360px;
+  }
+  .about .about-text button {
+    transform: scale(1.2);
+    margin-left: 3%;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-services {
+    left: 0;
+  }
+  .services .title:first-child {
+    left: 30%;
+    top: 7%;
+    width: 300px;
+  }
+  .services .title2 {
+    font-size: 15px;
+    width: 130px;
+    left: 40%;
+    top: 7%;
+  }
+  .skills .title:first-child {
+    top: 15%;
+    width: 300px;
+    left: 26%;
+  }
+  .skills .title2 {
+    top: 15%;
+    left: 40%;
+  }
+  .skills .text {
+    margin-left: 13%;
+  }
+  .skills button {
+    margin-left: 29%;
+  }
+  .skills .porcent {
+    transform: scale(1.2);
+    margin-top: 15%;
+    margin-left: 13%;
+  }
+  .skills h3 {
+    margin-top: 25%;
+  }
+  .contact .title:first-child {
+    left: 35%;
+    top: 7%;
+  }
+  .contact .title2 {
+    left: 40%;
+  }
+  .scroll-up-btn {
+    transform: scale(1.3);
+    bottom: 150px;
+  }
+  .scroll-up-btn.show {
+    bottom: 7.5%;
+  }
+  form {
+    transform: scale(1.2);
+    margin-bottom: 0;
+    margin-top: 12%;
+  }
+  .contact h3 {
+    margin-top: 15%;
+  }
+  .contact .form h3 {
+    margin-top: 5%;
+  }
+  .contact .info {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 530px) {
+  header {
+    height: 100px;
+    padding: 20px 30px;
+  }
+  header .logo-container {
+    transform: scale(1.5)
+  }
+  header i.fa-bars {
+    font-size: 37px;
+  }
+  header h3 {
+    font-size: 30px;
+  }
+  .navbar i {
+    font-size: 37px;
+  }
+  .home .home-content {
+    margin-left: 5%;
+  }
+  .home .home-content .text-1 {
+    font-size: 40px;
+  }
+  .home .home-content .text-2 {
+    font-size: 53px;
+  }
+  .home .home-content .text-3 {
+    font-size: 40px;
+  }
+  .services button {
+    left: 30%;
+  }
+  .skills .text {
+    margin-left: 15%;
+  }
+  .contact .title:first-child {
+    top: 8.5%;
+  }
+  .contact .title2 {
+    top: 8.1%;
+  }
+  .card-services {
+    transform: scale(1.1);
+  }
+  .card-services:not(:first-child) {
+    margin-top: 40px;
+  }
+  .card-services:nth-child(2) {
+    margin-top: 60px;
+  }
+  .services button {
+    transform: scale(1.2);
+    top: 10%;
+  }
+  .contact h3 {
+    margin-top: 20%;
+  }
+  .contact {
+    height: 1420px;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .contact {
+    height: 1430px;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .services .title:first-child,
+  .skills .title:first-child {
+    left: 32%;
+  }
+  .skills .title:first-child {
+    left: 28%;
+  }
+  .skills .title2 {
+    left: 41%;
+  }
+  .services .title2 {
+    left: 41%;
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .services button {
+    left: 32%;
+  }
+  .skills .text {
+    margin-left: 17.5%;
+  }
+  .skills button {
+    margin-left: 31%;
+  }
+  .contact p,
+  .contact h3 {
+    transform: scale(1.2);
+    margin-left: 10%;
+    margin-top: 5%;
+  }
+  .contact h3 {
+    width: 300px;
+    margin-top: 19%;
+  }
+  .contact {
+    height: 1460px;
+  }
+}
+
+@media screen and (min-width: 570px) {
+  .about .about-img {
+    margin-left: 21%;
+  }
+}
+
+@media screen and (min-width: 590px) {
+  .skills h3 {
+    font-size: 23px;
+  }
+  .skills .text {
+    font-size: 23px;
+    width: 80%;
+    margin-left: 11%;
+  }
+  .skills button {
+    margin-left: 34%;
+    transform: scale(1.2);
+  }
+  .skills .porcent {
+    transform: scale(1.3);
+    margin-left: 15%;
+  }
+  .contact {
+    height: 1470px;
+    margin-top: 15%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .navbar i {
+    font-size: 40px;
+    top: -47%;
+  }
+  .navbar .menu {
+    transform: scale(1.6);
+    margin-top: 140%;
+  }
+  .home .home-content .text-1 {
+    font-size: 40px;
+  }
+  .home .home-content .text-2 {
+    font-size: 70px;
+  }
+  .home {
+    top: 30%;
+  }
+  .title {
+    transform: scale(1.2);
+  }
+  .about {
+    height: 1500px;
+  }
+  .about .title:first-child {
+    left: 40%;
+    top: 13%;
+  }
+  .about .title2 {
+    top: 13%;
+    left: 43.5%;
+  }
+  .about .about-img {
+    transform: scale(1.5);
+    margin-top: 25%;
+    margin-left: 25%;
+  }
+  .about .about-text {
+    font-size: 23px;
+    width: 400px;
+    margin-top: 25%;
+    margin-left: 22%;
+  }
+  .about .about-text button {
+    transform: scale(1.5);
+    margin-left: 8%;
+    margin-top: 10%;
+  }
+  .services {
+    height: 2200px;
+  }
+  .cards {
+    margin-top: 15%;
+  }
+  .services .card-services {
+    transform: scale(1.3);
+  }
+  .services .card-services:not(:first-child) {
+    margin-top: 20%;
+  }
+  .services button {
+    transform: scale(1.4);
+    margin-top: 10%;
+    margin-left: 3.5%;
+  }
+  .services .title:first-child {
+    left: 38%;
+  }
+  .services .title2 {
+    left: 44%;
+  }
+  .skills .title:first-child {
+    left: 32%;
+  }
+  .skills h3 {
+    font-size: 27px;
+  }
+  .skills a {
+    text-decoration: none;
+  }
+  .skills button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .skills .porcent {
+    transform: scale(1.5);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact {
+    margin-top: 20%;
+  }
+  .contact .title:first-child {
+    left: 40%;
+  }
+  .contact .title2 {
+    top: 9%;
+    left: 43%;
+  }
+  .contact .social-media {
+    width: 300px;
+    margin-top: 20%;
+    margin-left: 10%;
+    margin-bottom: 20%;
+    transform: scale(1.5);
+  }
+  .contact .row .title {
+    margin-left: 10%;
+  }
 }
