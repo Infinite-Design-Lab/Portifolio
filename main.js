@@ -184,8 +184,8 @@ function validarEmail(email) {
     }
 }
 
-if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
+//if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
   // Este é um dispositivo móvel (smartphone).
-} else {
-  window.location.href = "https://infinite-design-lab.github.io/Portifolio/incompatible.html";
-}
+//} else {
+//  window.location.href = "https://infinite-design-lab.github.io/Portifolio/incompatible.html";
+//}
